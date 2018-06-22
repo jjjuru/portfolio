@@ -1,0 +1,121 @@
+@charset 'utf-8';
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+/* reset */
+html,body,div,dl,dt,dd,ul,ol,li,form,fieldset,p,table,thead,tr,td,th,tbody,tfoot,colgroup,col,address,h1,h2,h3,h4,h5,h6 { margin: 0; padding: 0 }
+caption { display: none }
+ul,ol { list-style: none }
+a { text-decoration: none; color: inherit }
+em, address { font-style: normal }
+img { border:none; vertical-align: middle }
+fieldset { border: none }
+
+body { font: 14px/1.6em 'Noto Sans', sans-serif; color: #333; letter-spacing: -2px }
+
+/* wrap */
+#wrap { position: relative; width: 1600px; min-height: 100%;  margin: 0 auto }
+.wrapper { position: relative; width: 1200px; margin: 0 auto }
+
+/* nav */
+.nav { font-weight: bold; padding-left: 10px; margin-bottom: 40px }
+.nav li { display: inline-block }
+.nav li:after { content: "·"; margin: 0 20px }
+.nav li:last-child:after { content: ""; margin: 0 }
+.nav li:last-child { border-bottom: 2px solid #333 }
+
+/* section - article join */
+.join h2 { display: inline-block; padding-left: 10px; font-size: 30px }
+.join > div:nth-child(1) { margin-bottom: 30px }
+.join > div:nth-child(1) ul { float: right; }
+.join > div:nth-child(1) ul, .join > div:nth-child(1) li { display: inline-block; font-size: 18px; color: #999; }
+.join > div:nth-child(1) li:nth-child(1) { font-weight: bold; color: #333 }
+.join > div:nth-child(1) li img { padding: 0 20px 5px }
+
+/* selectOkNo */
+.selectOkNo { padding: 40px 70px; border-top: 4px solid #333; background-color: #f6f6f6 }
+.selectOkNo h3 { display: inline-block; font-size: 20px }
+.selectOkNo > p { display: inline-block; padding-left: 15px; color: #999 }
+
+/* checkList */
+.checkList { padding: 20px 20px 40px }
+.checkList > div { display: block; overflow: hidden; position: relative }
+.checkList > div > div { float: left; width: 430px; height: 50px; line-height: 50px; margin-bottom: 30px; padding-left: 20px; background-color: #fff; font-size: 16px }
+.checkList > div > div:nth-child(1), .checkList > div > div:nth-child(3) { margin-right: 120px }
+/* The container */
+.checkList > div > div .container { display: inline-block; position: relative; padding-left: 30px; cursor: pointer; font-size: 16px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none }
+.checkList > div > div .container input { position: absolute; opacity: 0; cursor: pointer }
+.checkList > div > div .checkmark { position: absolute; top: 15px; left: 0; height: 18px; width: 18px; border: 1px solid #eee; background-color: #eee }
+.checkList > div > div .container input:checked ~ .checkmark { background-color: #fff }
+.checkList > div > div .checkmark:after { content: ""; position: absolute; display: none }
+.checkList > div > div .container input:checked ~ .checkmark:after { display: block }
+.checkList > div > div .container .checkmark:after { left: 6px; top: 1px; width: 5px; height: 10px; border: solid #907d4c; border-width: 0 3px 3px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg) }
+
+.checkList > div > div button { float: right; width: 136px; height: 50px; border: 2px solid #333; background-color: #fff }
+.checkList > div > div button > img { padding-left: 14px; margin-bottom: 3px }
+
+.allCheck { display: block; height: 56px; line-height: 56px; margin-bottom: 18px; text-align: center; background-color: #dc8b6b; font-size: 16px; color: #fff }
+/* allCheck container */
+.allCheck > .container { display: block; position: relative; cursor: pointer; font-size: 16px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none }
+.allCheck > .container input { position: absolute; opacity: 0; cursor: pointer }
+.allCheck > .container .checkmark { position: absolute; top: 18px; left: 268px; height: 20px; width:20px; background-color: #fff }
+.allCheck > .container .checkmark:after { content: ""; position: absolute; display: none }
+.allCheck > .container input:checked ~ .checkmark:after { display: block }
+.allCheck > .container .checkmark:after { left: 6px; top: 1px; width: 5px; height: 10px; border: solid #907d4c; border-width: 0 3px 3px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg) }
+
+.checkCaution { text-align: center }
+
+/* receiveOkNo */
+
+.receiveOkNo h4 { font-size: 16px; padding-bottom: 20px }
+.receiveOkNo div { display: inline-block; margin-bottom: 30px; border-right: 2px solid #ededed }
+.receiveOkNo div:nth-of-type(2) { border: none; padding-left: 30px }
+.receiveOkNo > p { color: #999 }
+.receiveOkNo > div > p { display: inline-block; font-weight: bold; padding-right: 52px }
+/* The container */
+.receiveOkNo > div .container { display: inline-block; position: relative; padding-left: 23px; padding-right: 38px; cursor: pointer; font-size: 16px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none }
+.receiveOkNo > div .container input { position: absolute; opacity: 0; cursor: pointer }
+.receiveOkNo > div .checkmark { position: absolute; top: 3px; left: 0; height: 15px; width: 15px; background-color: #e2e2e2; border-radius: 50% }
+.receiveOkNo > div .container input:checked ~ .checkmark { background-color: #dc8b6b }
+.receiveOkNo > div .checkmark:after { content: ""; position: absolute; display: none }
+.receiveOkNo > div .container input:checked ~ .checkmark:after { display: block }
+.receiveOkNo > div .container .checkmark:after { top: 3px; left: 3px; width: 9px; height: 9px; border-radius: 50%; background: #fff }
+
+/* notice */
+.notice { margin-top: 30px; color: #999 }
+.notice li { list-style: square inside }
+
+/* buttonList */
+.buttonList { padding-top: 40px; text-align: center }
+.buttonList button { width: 280px; height: 40px; margin-right: 20px; background-color: #000; color: #fff }
+.buttonList button:nth-child(2) { margin: 0; background-color: #fff; color: #333; border: 1px solid #000 }
+
+/* caution */
+.caution { width: 1060px; margin: 40px auto }
+.caution h3 { font-size: 20px; padding-bottom: 15px }
+.caution > p { color: #999 }
+.caution div { color: #999; padding: 30px }
+.caution table { border-collapse:collapse }
+.caution td {  border-right: 2px solid #ededed; border-top: 2px solid #ededed }
+.caution tr:nth-child(2) > td:nth-child(3) { border-right: none }
+.caution th { height: 30px; line-height: 30px; background-color: #ededed }
+.caution td { height: 30px; line-height: 30px; background-color: #f6f6f6; text-align: center; font-size: 12px }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
